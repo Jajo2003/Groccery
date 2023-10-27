@@ -1,0 +1,19 @@
+﻿@{
+	ViewData["title"] = "home";
+}
+
+@model List<Product>
+<h1 >Products List</h1>
+<ul>
+	@foreach(var prod in Model)
+	{
+		<li>@prod.Name</li>
+		<li>@prod.Capacity</li>
+		<li>@prod.Price</li>
+
+	}
+
+
+</ul>
+
+
